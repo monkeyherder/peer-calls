@@ -5,18 +5,24 @@
   <%- include('./_header.html') %>
 </head>
 <body>
-  <a id="github-ribbon" href="https://github.com/jeremija/peer-calls" target="_blank">
-    <img src="<%= baseUrl + '/res/fork.png' %>" alt="Fork me on GitHub">
-  </a>
-
   <div id="container">
     <form id="form" method="post" action="<%= baseUrl + '/call' %>" autocomplete="off">
       <h1>
-        <img src="<%= baseUrl + '/res/peer-calls.svg' %>" width="100%" alt="Peer Calls">
+        <img src="<%= baseUrl + '/res/virtual_house_party.jpg' %>" width="100%" alt="Peer Calls">
       </h1>
-      <p>Group peer-to-peer calls for everyone. Create a private room. Share the link.</p>
-      <input type="text" value="" name="call" placeholder="Room ID (Leave empty for random)" autofocus>
-      <input type="submit" value="Start Session">
+      <p>Welcome to the Gregs' virtual birthday party! Make yourself at home, and feel free to move around! Where would you like to start?</p>
+    </form>
+    <form id="form" method="post" action="<%= baseUrl + '/call' %>" autocomplete="off">
+      <input type="hidden" name="call" value="living_room" />
+      <input type="submit" value="Living Room" />
+    </form>
+    <form id="form" method="post" action="<%= baseUrl + '/call' %>" autocomplete="off">
+      <input type="hidden" name="call" value="kitchen" />
+      <input type="submit" value="Kitchen" />
+    </form>
+    <form id="form" method="post" action="<%= baseUrl + '/call' %>" autocomplete="off">
+      <input type="hidden" name="call" value="back_yard" />
+      <input type="submit" value="Back Yard" />
     </form>
   </div>
 

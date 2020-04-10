@@ -152,21 +152,6 @@ extends React.PureComponent<ToolbarProps, ToolbarState> {
           title='Toggle Chat'
         />
 
-        <ToolbarButton
-          className='send-file'
-          icon='icon-file-text2'
-          onClick={this.handleSendFile}
-          title='Send File'
-        />
-
-        <ToolbarButton
-          className='stream-desktop'
-          icon='icon-display'
-          onClick={this.handleToggleShareDesktop}
-          on={!!this.props.desktopStream}
-          title='Share Desktop'
-        />
-
         {stream && (
           <React.Fragment>
             <ToolbarButton
