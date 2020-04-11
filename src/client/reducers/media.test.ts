@@ -259,7 +259,7 @@ describe('media', () => {
       await successfulDial()
     })
 
-    it('cahnges state to HUNG_UP when destroyPeers is called', async() => {
+    it('changes state to HUNG_UP when destroyPeers is called', async() => {
       await successfulDial()
       store.dispatch(hangUp())
       expect(store.getState().media.dialState).toBe(DIAL_STATE_HUNG_UP)

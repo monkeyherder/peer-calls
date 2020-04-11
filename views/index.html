@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Peer Calls - Video calls to anybody in the world with a private direct connection</title>
+  <title>Virtual House Party - When you want to party but can't go out</title>
   <%- include('./_header.html') %>
 </head>
 <body>
   <div id="container">
-    <form id="form" method="post" action="<%= baseUrl + '/call' %>" autocomplete="off">
+    <div id="form">
       <h1>
-        <img src="<%= baseUrl + '/res/virtual_house_party.jpg' %>" width="100%" alt="Peer Calls">
+        <img src="<%= baseUrl + '/res/virtual_house_party.png' %>" width="100%" alt="Peer Calls">
       </h1>
       <p>Welcome to the Gregs' virtual birthday party! Make yourself at home, and feel free to move around! Where would you like to start?</p>
-    </form>
+    </div>
     <form id="form" method="post" action="<%= baseUrl + '/call' %>" autocomplete="off">
       <input type="hidden" name="call" value="living_room" />
       <input type="submit" value="Living Room" />

@@ -187,7 +187,7 @@ extends React.PureComponent<ToolbarProps, ToolbarState> {
               onClick={this.props.onHangup}
               className='hangup'
               icon='icon-call_end'
-              title="Hang Up"
+              title="Leave Room"
             />
           )}
 

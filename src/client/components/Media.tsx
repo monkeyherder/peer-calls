@@ -130,7 +130,7 @@ export class MediaForm extends React.PureComponent<MediaProps> {
         </select>
 
         <button type='submit'>
-          Join Call
+          Enter Room
         </button>
       </form>
     )
