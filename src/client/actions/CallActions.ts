@@ -52,6 +52,7 @@ export type HangUpAction = {
 
 export const hangUp = (): HangUpAction => {
   SocketActions.removeEventListeners(socket)
+  window.location.href = '/'
   return {
     type: HANG_UP,
   }

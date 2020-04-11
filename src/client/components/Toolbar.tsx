@@ -182,14 +182,12 @@ extends React.PureComponent<ToolbarProps, ToolbarState> {
           title='Toggle Fullscreen'
         />
 
-          {this.props.dialState === DIAL_STATE_IN_CALL && (
-            <ToolbarButton
-              onClick={this.props.onHangup}
-              className='hangup'
-              icon='icon-call_end'
-              title="Leave Room"
-            />
-          )}
+        <ToolbarButton
+            onClick={this.props.onHangup}
+            className='hangup'
+            icon='icon-call_end'
+            title="Leave Room"
+          />
 
       </div>
     )
