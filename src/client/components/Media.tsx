@@ -105,29 +105,8 @@ export class MediaForm extends React.PureComponent<MediaProps> {
           value={props.nickname}
         />
 
-        <select
-          name='video-input'
-          onChange={this.handleVideoChange}
-          value={videoId}
-        >
-          <Options
-            devices={props.devices}
-            default='{"facingMode":"user"}'
-            type='videoinput'
-          />
-        </select>
-
-        <select
-          name='audio-input'
-          onChange={this.handleAudioChange}
-          value={audioId}
-        >
-          <Options
-            devices={props.devices}
-            default='true'
-            type='audioinput'
-          />
-        </select>
+        <input type='hidden' name='video-input' value={videoId} />
+        <input type='hidden' name='audio-input' value={audioId} />
 
         <button type='submit'>
           Enter Room
